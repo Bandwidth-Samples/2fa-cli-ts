@@ -10,12 +10,12 @@ for (const key in envs) {
     process.env[key] = envs[key]
 }
 
-const accountId = process.env.BANDWIDTH_ACCOUNT_ID
-const voiceApplicationId = process.env.BANDWIDTH_VOICE_APPLICATION_ID
-const messagingApplicationId = process.env.BANDWIDTH_MESSAGING_APPLICATION_ID
-const bwPhoneNumber = process.env.BANDWIDTH_PHONE_NUMBER
-const username = process.env.BANDWIDTH_USERNAME
-const password = process.env.BANDWIDTH_PASSWORD
+const accountId = process.env.BW_ACCOUNT_ID
+const voiceApplicationId = process.env.BW_VOICE_APPLICATION_ID
+const messagingApplicationId = process.env.BW_MESSAGING_APPLICATION_ID
+const bwPhoneNumber = process.env.BW_NUMBER
+const username = process.env.BW_USERNAME
+const password = process.env.BW_PASSWORD
 
 if (!accountId || !voiceApplicationId || !messagingApplicationId || !bwPhoneNumber ) {
     throw new Error(`Enviroment variables not set up properly
