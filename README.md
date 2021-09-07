@@ -1,4 +1,4 @@
-# Repo Title REPLACE
+# Multi Factor Authentication Sample
 <a href="http://dev.bandwidth.com"><img src="https://s3.amazonaws.com/bwdemos/BW-VMP.png"/></a>
 </div>
 
@@ -6,7 +6,7 @@
 
 <!-- TOC -->
 
-- [Repo Title REPLACE](#repo-title-replace)
+- [Multi Factor Authentication Sample](#multi-factor-authentication-sample)
 - [Description](#description)
 - [Bandwidth](#bandwidth)
 - [Environmental Variables](#environmental-variables)
@@ -16,7 +16,7 @@
 <!-- /TOC -->
 
 # Description
-A short description of your sample app and its capabilities. 
+This application creates a simple CLI to interact with Bandwidth's MFA API. It allows for the user to receive a code via text or voice, and then verifies the code entered is correct.
 
 # Bandwidth
 
@@ -30,9 +30,9 @@ For more information about API credentials see [here](https://dev.bandwidth.com/
 The sample app uses the below environmental variables.
 ```sh
 BW_ACCOUNT_ID                 # Your Bandwidth Account Id
-BW_USERNAME                   # Your Bandwidth API Token
-BW_PASSWORD                   # Your Bandwidth API Secret
-BW_NUMBER               # Your The Bandwidth Phone Number
+BW_USERNAME                   # Your Bandwidth API Username
+BW_PASSWORD                   # Your Bandwidth API Password
+BW_NUMBER                     # The Bandwidth phone number involved with this application
 BW_VOICE_APPLICATION_ID       # Your Voice Application Id created in the dashboard
 BW_MESSAGING_APPLICATION_ID   # Your Messaging Application Id created in the dashboard
 ```
