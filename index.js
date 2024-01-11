@@ -1,4 +1,4 @@
-import { MFAApi, Configuration } from 'bandwidth-sdk'
+import { MFAApi, Configuration } from 'bandwidth-sdk';
 import prompts from 'prompts';
 
 const BW_ACCOUNT_ID = process.env.BW_ACCOUNT_ID;
